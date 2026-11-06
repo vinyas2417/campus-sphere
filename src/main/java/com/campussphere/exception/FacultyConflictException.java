@@ -1,0 +1,1 @@
+package com.campussphere.exception; public final class FacultyConflictException extends CampusException { public FacultyConflictException(String message) { super(message); } }

@@ -1,0 +1,1 @@
+package com.campussphere.exception; public final class InvalidAttendanceException extends CampusException { public InvalidAttendanceException(String message) { super(message); } }

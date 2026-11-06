@@ -1,0 +1,1 @@
+package com.campussphere.exception; public final class ResourceNotAvailableException extends CampusException { public ResourceNotAvailableException(String message) { super(message); } }

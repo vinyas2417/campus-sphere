@@ -1,0 +1,1 @@
+package com.campussphere.exception; public final class BookingConflictException extends CampusException { public BookingConflictException(String message) { super(message); } }

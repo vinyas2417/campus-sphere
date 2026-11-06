@@ -1,0 +1,1 @@
+package com.campussphere.exception; public final class CourseCapacityExceededException extends CampusException { public CourseCapacityExceededException(String message) { super(message); } }

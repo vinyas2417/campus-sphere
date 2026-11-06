@@ -1,0 +1,11 @@
+target/
+.tools/
+.m2/
+data/
+*.log
+.idea/
+*.iml
+.env
+faculty_assigned_courses_credentials.csv
+__pycache__/
+*.py[cod]

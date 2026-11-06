@@ -1,0 +1,1698 @@
+NAMMA SPHERE
+
+Smart Campus Integrated Management System Using Java and Object-Oriented Programming
+
+Product Tagline
+
+“One Campus. One Intelligent Platform.”
+
+---
+
+MASTER DEVELOPMENT INSTRUCTION
+
+Act simultaneously as a:
+
+- Senior Java Software Architect
+- Senior JavaFX Developer
+- Object-Oriented Programming Expert
+- MySQL / JDBC Database Engineer
+- UI/UX Product Designer
+- Spatial Interface Designer
+- QA Engineer
+- Software Product Architect
+- Security Engineer
+- Test Engineer
+- Academic PBL Project Mentor
+
+Your responsibility is to DESIGN, DEVELOP, CONNECT, TEST, DEBUG AND COMPLETE a fully functional Semester-3 Object-Oriented Programming PBL application.
+
+Do not only produce:
+
+- Mockups
+- Wireframes
+- Static UI
+- Design concepts
+- Non-functional screens
+- Placeholder buttons
+- TODO features
+- Hard-coded dashboards
+- Fake database records
+- Screens disconnected from the backend
+
+Actually implement the application module-by-module.
+
+Every important button, form, table, search field, filter, dashboard card, chart, approval action and workflow must perform a real operation.
+
+---
+
+1. OFFICIAL ACADEMIC PROJECT
+
+Official Academic Project Title:
+
+SMART CAMPUS INTEGRATED MANAGEMENT SYSTEM USING JAVA AND OBJECT-ORIENTED PROGRAMMING
+
+Professional Product Name:
+
+Namma Sphere
+
+Tagline:
+
+“One Campus. One Intelligent Platform.”
+
+Namma Sphere is only the professional product identity.
+
+Do NOT replace or modify the official academic project.
+
+Everything must exist inside ONE integrated Java application.
+
+---
+
+2. PROJECT TYPE
+
+Desktop University ERP / Smart Campus Management Ecosystem
+
+Primary platform:
+
+JavaFX Desktop Application
+
+The application should behave like a small university ERP integrating academic, administrative and campus services into one platform.
+
+---
+
+3. PRIMARY VISUAL STYLE
+
+Use:
+
+Spatial Academic Intelligence Design
+
+Combine:
+
+- Layered Liquid Glass
+- Premium Bento Grid
+- Soft Spatial Depth
+- Subtle Neumorphic Surfaces
+- Floating Panels
+- Ambient Gradient Lighting
+- Contextual Status Colors
+- Smooth JavaFX Micro-animations
+
+Do NOT create an excessively decorative interface.
+
+The application must remain suitable for a professional university environment.
+
+The interface should feel:
+
+Premium + Intelligent + Futuristic + Academic + Trustworthy + Calm + Modern
+
+The design must go beyond basic flat UI or ordinary glassmorphism while remaining practical to implement using JavaFX.
+
+---
+
+4. DEVELOPMENT PRIORITY
+
+Development must happen in this order:
+
+Phase 1 — Foundation
+
+Create:
+
+- Maven project
+- Package structure
+- Database connection
+- Database schema
+- Base models
+- Repository architecture
+- Services
+- Authentication
+- Session management
+- Role-based access
+
+Phase 2 — Mandatory Academic Features
+
+Complete first:
+
+1. Student Management
+2. Faculty Management
+3. Course Management
+4. Resource Management
+5. Campus Activity Management
+6. Resource Booking
+7. JDBC CRUD
+8. Required OOP concepts
+9. Required Advanced Java concepts
+
+These features have highest priority.
+
+Phase 3 — Namma Sphere Enhancements
+
+After mandatory features are stable, implement:
+
+- Departments
+- Timetable
+- Attendance
+- Assignments
+- Study Materials
+- E-Library
+- Question Papers
+- Exams
+- Leave Management
+- Permissions
+- On-Duty
+- Faculty Leave
+- Faculty Reallocation
+- Faculty Appointments
+- Doubt Desk
+- Project Mentoring
+- Events
+- Announcements
+- Notifications
+- Help Desk
+- Reports
+- Analytics
+- Activity Logs
+
+Do not sacrifice mandatory PBL requirements for optional modules.
+
+---
+
+5. TECHNOLOGY STACK
+
+Use:
+
+Programming Language
+
+Java
+
+GUI
+
+JavaFX
+
+Styling
+
+JavaFX CSS
+
+Layout
+
+FXML may be used where it improves maintainability.
+
+Architecture
+
+MVC + Layered Architecture
+
+Build Tool
+
+Maven
+
+Primary Database
+
+MySQL
+
+Demonstration / Lightweight Database
+
+SQLite may be supported through configuration.
+
+Database Connectivity
+
+JDBC
+
+Charts
+
+JavaFX Charts
+
+Export
+
+CSV
+
+Optional:
+
+Apache POI for Excel
+
+Testing
+
+JUnit 5
+
+Version Control
+
+Git
+
+Recommended Maven dependencies may include:
+
+- JavaFX Controls
+- JavaFX FXML
+- MySQL Connector/J
+- SQLite JDBC
+- JUnit Jupiter
+- BCrypt password hashing library
+- Apache POI if Excel export is implemented
+
+Do not introduce frameworks that hide the Java/OOP concepts the PBL is supposed to demonstrate.
+
+---
+
+6. APPLICATION ARCHITECTURE
+
+Strictly follow:
+
+JavaFX View
+↓
+Controller
+↓
+Service
+↓
+Repository / DAO
+↓
+JDBC
+↓
+Database
+
+Controllers must NOT contain raw SQL.
+
+Controllers handle:
+
+- UI events
+- UI state
+- Input collection
+- Displaying results
+
+Services handle:
+
+- Business logic
+- Validation
+- Permissions
+- Calculations
+- Conflict checking
+- Workflows
+
+Repositories handle:
+
+- SQL
+- JDBC
+- CRUD
+- Database mapping
+
+Models represent domain entities.
+
+---
+
+7. PACKAGE STRUCTURE
+
+Use:
+
+com.campussphere
+
+app
+config
+controller
+model
+service
+repository
+database
+exception
+validation
+util
+task
+ui
+
+Resources:
+
+src/main/resources/
+
+css
+fxml
+images
+icons
+data
+database
+
+Example structure:
+
+com.campussphere.app
+CampusSphereApplication
+Launcher
+
+com.campussphere.config
+DatabaseConfig
+AppConfig
+
+com.campussphere.controller
+LoginController
+StudentController
+FacultyController
+CourseController
+ResourceController
+BookingController
+
+com.campussphere.service
+
+com.campussphere.repository
+
+com.campussphere.model
+
+com.campussphere.exception
+
+com.campussphere.validation
+
+com.campussphere.task
+
+Do not create giant controllers or giant service classes.
+
+Each class must have a clear responsibility.
+
+---
+
+8. CORE OOP REQUIREMENTS
+
+The project MUST clearly demonstrate:
+
+- Classes
+- Objects
+- Constructors
+- Methods
+- Packages
+- Encapsulation
+- Abstraction
+- Inheritance
+- Polymorphism
+- Interfaces
+- Method Overloading
+- Method Overriding
+- Generics
+
+---
+
+9. PERSON OOP HIERARCHY
+
+Create:
+
+abstract class Person
+
+Private/protected fields:
+
+- id
+- name
+- email
+- phone
+- address
+
+Subclasses:
+
+Student extends Person
+
+Faculty extends Person
+
+Administrator extends Person
+
+Use constructors.
+
+Use getters/setters appropriately.
+
+Demonstrate encapsulation.
+
+Provide abstract or overridden methods such as:
+
+getRole()
+
+displayDetails()
+
+getDashboardAccess()
+
+Example behavior:
+
+Student.getRole()
+→ STUDENT
+
+Faculty.getRole()
+→ FACULTY
+
+Administrator.getRole()
+→ ADMIN
+
+Use polymorphism wherever practical.
+
+---
+
+10. RESOURCE OOP HIERARCHY
+
+Create:
+
+abstract class Resource
+
+Common attributes:
+
+- resourceId
+- resourceName
+- building
+- floor
+- capacity
+- status
+
+Subclasses:
+
+Classroom
+
+Laboratory
+
+Equipment
+
+Possible additional subtype:
+
+SeminarRoom
+
+Statuses:
+
+AVAILABLE
+
+OCCUPIED
+
+RESERVED
+
+MAINTENANCE
+
+---
+
+11. LEAVE OOP HIERARCHY
+
+Create:
+
+abstract class LeaveRequest
+
+Subclasses:
+
+StudentLeave
+
+FacultyLeave
+
+OnDutyRequest
+
+Common attributes should include:
+
+- requestId
+- requesterId
+- requestDate
+- fromDate
+- toDate
+- reason
+- status
+- approvalRemarks
+
+Statuses:
+
+PENDING
+
+APPROVED
+
+REJECTED
+
+CANCELLED
+
+---
+
+12. INTERFACES
+
+Create meaningful interfaces.
+
+Examples:
+
+Authenticatable
+
+Searchable
+
+Bookable
+
+Approvable
+
+Notifiable
+
+Reportable
+
+Exportable
+
+Reallocatable
+
+Example:
+
+interface Approvable {
+
+void approve();
+
+void reject(String reason);
+
+String getStatus();
+
+}
+
+Example:
+
+interface Reallocatable {
+
+List<Faculty> findAvailableFaculty();
+
+boolean hasConflict(Faculty faculty);
+
+void assignReplacement(Faculty faculty);
+
+}
+
+Interfaces must be used by real classes.
+
+Do not create unused interfaces simply to satisfy the PBL.
+
+---
+
+13. GENERICS
+
+Create a generic repository abstraction.
+
+Example:
+
+Repository<T>
+
+with operations such as:
+
+add(T entity)
+
+update(T entity)
+
+delete(T entity)
+
+findById(int id)
+
+findAll()
+
+Implement repositories such as:
+
+StudentRepository
+
+FacultyRepository
+
+CourseRepository
+
+ResourceRepository
+
+BookingRepository
+
+LeaveRepository
+
+---
+
+14. METHOD OVERLOADING
+
+Demonstrate overloading naturally.
+
+For example:
+
+searchStudent(int id)
+
+searchStudent(String name)
+
+searchStudent(String department, int semester)
+
+Also consider overloaded:
+
+searchFaculty(...)
+
+searchCourse(...)
+
+---
+
+15. COLLECTIONS
+
+Use Java Collections naturally throughout the project.
+
+Examples:
+
+ArrayList<Student>
+
+HashMap<Integer, Course>
+
+HashSet<String>
+
+Queue<ServiceToken>
+
+Use Collections for:
+
+- temporary data
+- unique values
+- notification queues
+- search results
+- course mapping
+- dashboard processing
+
+---
+
+16. STREAM API
+
+Use Java Streams for real operations such as:
+
+- Search
+- Filtering
+- Sorting
+- Grouping
+- Counting
+- Statistics
+- Available faculty selection
+- Available resource selection
+- Pending leave detection
+
+Examples:
+
+Filter students by department.
+
+Sort students alphabetically.
+
+Find pending leave requests.
+
+Find available classrooms.
+
+Group students by semester.
+
+Count faculty by department.
+
+Find substitute faculty without timetable conflicts.
+
+---
+
+17. LAMBDA EXPRESSIONS
+
+Use lambdas for:
+
+- JavaFX event handling
+- Filters
+- Comparators
+- Streams
+- Functional interfaces
+- Background task callbacks
+
+---
+
+18. FUNCTIONAL INTERFACES
+
+Include at least one useful custom functional interface.
+
+Example:
+
+@FunctionalInterface
+interface EntityValidator<T> {
+
+boolean validate(T entity);
+
+}
+
+Another possible example:
+
+@FunctionalInterface
+interface NotificationHandler<T> {
+
+void send(T notification);
+
+}
+
+---
+
+19. EXCEPTION HANDLING
+
+Create custom exceptions such as:
+
+InvalidStudentException
+
+InvalidLoginException
+
+DatabaseConnectionException
+
+ResourceNotAvailableException
+
+BookingConflictException
+
+InvalidLeaveDateException
+
+UnauthorizedApprovalException
+
+LeaveRequestNotFoundException
+
+FacultyConflictException
+
+BookNotAvailableException
+
+CourseCapacityExceededException
+
+InvalidAttendanceException
+
+Controllers must convert technical failures into readable user messages.
+
+Never show raw stack traces to students or faculty.
+
+Errors should appear using polished Namma Sphere alert dialogs or inline validation.
+
+---
+
+20. MULTITHREADING
+
+Use JavaFX:
+
+Task
+
+Service
+
+ExecutorService where appropriate
+
+for:
+
+- Dashboard loading
+- Analytics
+- Large database operations
+- Report generation
+- CSV export
+- Large table loading
+- Notifications
+
+Never block the JavaFX Application Thread with large operations.
+
+Display:
+
+- loading skeleton
+- spinner
+- progress bar
+- success state
+- error state
+
+where appropriate.
+
+---
+
+21. SYNCHRONIZATION AND CONCURRENCY
+
+Synchronization must be demonstrated through a meaningful feature.
+
+Resource Booking
+
+If two users attempt to reserve:
+
+AI Lab
+
+10:00–11:00
+
+at approximately the same time,
+
+only one valid booking may succeed.
+
+Before inserting the booking:
+
+1. Begin transaction.
+2. Recheck availability.
+3. Detect overlapping reservations.
+4. Lock or synchronize critical operation where needed.
+5. Insert booking.
+6. Commit transaction.
+
+If conflict exists:
+
+Display:
+
+Booking Conflict
+
+“AI Lab is already reserved during the selected time.”
+
+Faculty Reallocation
+
+Two administrators must not allocate the same substitute faculty member to overlapping classes.
+
+Revalidate faculty availability immediately before final assignment.
+
+---
+
+22. DATABASE DESIGN
+
+Create normalized tables including:
+
+users
+
+students
+
+faculty
+
+administrators
+
+departments
+
+courses
+
+course_enrollments
+
+class_teacher_assignments
+
+resources
+
+classrooms
+
+laboratories
+
+equipment
+
+resource_bookings
+
+timetable
+
+timetable_overrides
+
+attendance
+
+assignments
+
+study_materials
+
+library_resources
+
+library_borrowings
+
+library_reservations
+
+exam_schedule
+
+events
+
+event_registrations
+
+leave_requests
+
+permission_requests
+
+faculty_substitutions
+
+faculty_appointments
+
+doubts
+
+doubt_replies
+
+projects
+
+project_members
+
+project_milestones
+
+announcements
+
+notifications
+
+helpdesk_tickets
+
+activity_logs
+
+Use:
+
+- Primary keys
+- Foreign keys
+- Unique constraints
+- Appropriate indexes
+- NOT NULL where required
+- Referential integrity
+- Normalized relationships
+
+Avoid repeated data.
+
+---
+
+23. AUTHENTICATION
+
+Create a premium Namma Sphere login experience.
+
+Fields:
+
+Username / Email
+
+Password
+
+Features:
+
+- Show password
+- Hide password
+- Remember Me
+- Login validation
+- Forgot Password simulation
+- Role identification
+- Logout
+- Session handling
+
+Roles:
+
+STUDENT
+
+FACULTY
+
+ADMIN
+
+HOD may use ADMIN-level functionality with appropriate permissions.
+
+Passwords must not be stored in plain text.
+
+Use password hashing such as BCrypt where practical.
+
+After authentication:
+
+Student
+→ Student Workspace
+
+Faculty
+→ Faculty Workspace
+
+Admin / HOD
+→ Campus Command Center
+
+---
+
+24. ROLE-BASED ACCESS CONTROL
+
+A student must not access administrative management screens.
+
+Faculty must only access appropriate teaching and academic functions.
+
+Admin/HOD can access management modules.
+
+Permissions must be checked inside services as well as navigation visibility.
+
+Do not rely only on hiding menu buttons.
+
+---
+
+25. PRIMARY APPLICATION SHELL
+
+After login, create a persistent Namma Sphere shell.
+
+Left Navigation Rail
+
+Include:
+
+Namma Sphere logo
+
+Role-aware navigation
+
+Collapsible navigation
+
+Active section indicator
+
+Bottom area:
+
+- Notifications
+- Help
+- Settings
+- User profile
+- Logout
+
+Use icons with text.
+
+Collapsed state may show only icons with tooltips.
+
+---
+
+26. TOP COMMAND BAR
+
+Include:
+
+Global Search
+
+Current module title
+
+Contextual quick actions
+
+Notification button
+
+Current date context when useful
+
+Profile avatar
+
+Optional command palette shortcut:
+
+Ctrl + K
+
+Global search should be capable of finding appropriate entities such as:
+
+- Student
+- Faculty
+- Course
+- Resource
+- Book
+- Event
+
+depending on role permissions.
+
+---
+
+27. VISUAL HIERARCHY AND SPATIAL DEPTH
+
+Create approximately four visual depth levels.
+
+Level 0 — Application Background
+
+Use deep academic navy / charcoal with very subtle radial gradient lighting.
+
+Avoid pure black.
+
+Level 1 — Main Workspace Surface
+
+Large rounded containers with slight translucency.
+
+Level 2 — Functional Cards
+
+Cards should appear elevated from Level 1.
+
+Use:
+
+- fine borders
+- soft shadows
+- subtle glass effect
+- controlled highlights
+
+Level 3 — Interactive Layer
+
+Used for:
+
+- dialogs
+- command palette
+- dropdowns
+- detail drawers
+- booking confirmation
+- notifications
+
+This level may have stronger shadows and slightly brighter borders.
+
+Avoid excessive blur because it can reduce JavaFX performance.
+
+---
+
+28. COLOR SYSTEM
+
+Create CSS variables/constants equivalent to:
+
+Primary Background:
+#09111F
+
+Secondary Background:
+#0F1B2D
+
+Elevated Surface:
+#162338
+
+Primary Accent:
+#6C7CFF
+
+Secondary Accent:
+#24C8FF
+
+Academic Violet:
+#8C6CFF
+
+Success:
+#30D18B
+
+Warning:
+#F5B942
+
+Danger:
+#FF5E6C
+
+Information:
+#4DA3FF
+
+Primary Text:
+#F5F7FC
+
+Secondary Text:
+#AAB5C6
+
+Muted Text:
+#728198
+
+Border:
+rgba(255,255,255,0.08)
+
+Create optional gradient combinations such as:
+
+Indigo → Electric Blue
+
+Violet → Indigo
+
+Cyan → Blue
+
+Use gradients selectively.
+
+Do not make every card colorful.
+
+Status colors must remain consistent across the application.
+
+---
+
+29. TYPOGRAPHY
+
+Preferred bundled font:
+
+Inter
+
+Alternative:
+
+Manrope
+
+Fallback:
+
+Segoe UI / System Sans
+
+Use:
+
+Display
+
+30–36 px
+
+Page Title
+
+24–28 px
+
+Section Heading
+
+18–20 px
+
+Card Heading
+
+14–16 px
+
+Body
+
+13–15 px
+
+Caption
+
+11–12 px
+
+Data/Table
+
+12–14 px
+
+Use medium/semibold weights for important UI labels.
+
+Use a monospace font only for identifiers such as:
+
+- USN
+- Course Code
+- Booking ID
+- Resource ID
+
+Do not use excessive uppercase text.
+
+---
+
+30. MICROCOPY
+
+Use human-readable terminology.
+
+Instead of:
+
+“Operation executed successfully.”
+
+Use:
+
+“Student added successfully.”
+
+Instead of:
+
+“Error 409.”
+
+Use:
+
+“This resource is already booked during the selected time.”
+
+Instead of:
+
+“Invalid input.”
+
+Use:
+
+“Enter a valid university email address.”
+
+Every empty state should explain the next action.
+
+Example:
+
+“No assignments yet. New assignments from your faculty will appear here.”
+
+---
+
+31. MICRO-INTERACTIONS
+
+Use JavaFX animation carefully.
+
+Buttons:
+
+Hover:
+slight elevation + subtle glow
+
+Press:
+scale approximately 0.98
+
+Release:
+return smoothly
+
+Cards:
+
+Hover:
+translateY around -2 to -4 px
+
+Do not animate every card continuously.
+
+Navigation:
+
+Active item should have:
+
+- accent line
+- tinted background
+- subtle icon glow
+
+Dialogs:
+
+Fade + slight scale transition.
+
+Detail drawers:
+
+Slide from right.
+
+Page changes:
+
+120–220ms fade/translate transitions.
+
+Notification:
+
+small slide/fade animation.
+
+Successful operations:
+
+brief success indicator.
+
+Do not use distracting bouncing or gaming-style animations.
+
+---
+
+32. LOADING EXPERIENCE
+
+Never freeze the screen.
+
+For background loading use:
+
+- Skeleton cards
+- ProgressIndicator
+- Lightweight progress bars
+- “Loading records...” messages
+
+For long export/report operations:
+
+Display task progress.
+
+---
+
+33. STUDENT DASHBOARD
+
+Design a personalized student workspace.
+
+Header:
+
+“Good morning, [Student Name]”
+
+Subtext:
+
+“Here’s what’s happening across your campus today.”
+
+Create a Bento-style dashboard.
+
+Cards may include:
+
+Attendance
+
+Current overall attendance %
+
+Classes attended
+
+Classes missed
+
+View details
+
+Today’s Classes
+
+Course
+
+Faculty
+
+Time
+
+Room
+
+Next-class indicator
+
+Assignments
+
+Due today
+
+Upcoming
+
+Overdue
+
+Upcoming Exam
+
+Course
+
+Exam type
+
+Date
+
+Days remaining
+
+Library
+
+Borrowed books
+
+Due soon
+
+Overdue
+
+Requests
+
+Pending leave
+
+Booking requests
+
+Appointments
+
+Campus Events
+
+Upcoming events relevant to the student
+
+Quick Actions
+
+- View Timetable
+- Browse Library
+- Apply Leave
+- Book Resource
+- Ask Doubt
+
+All values must come from stored data.
+
+---
+
+34. STUDENT PROFILE
+
+Create profile sections:
+
+Overview
+
+Courses
+
+Attendance
+
+Assignments
+
+Library
+
+Leave
+
+Bookings
+
+Activities
+
+Display:
+
+Student ID
+
+USN
+
+Name
+
+Department
+
+Semester
+
+Section
+
+Email
+
+Phone
+
+DOB
+
+Address
+
+Admission Year
+
+Status
+
+---
+
+35. STUDENT MANAGEMENT
+
+Admin operations:
+
+- Add
+- View
+- Search
+- Update
+- Delete
+- Filter
+- Sort
+
+Fields:
+
+Student ID
+
+USN
+
+Name
+
+Department
+
+Semester
+
+Section
+
+Email
+
+Phone
+
+DOB
+
+Address
+
+Admission Year
+
+Status
+
+Search using:
+
+- USN
+- Name
+- Department
+- Semester
+- Section
+
+Delete only after confirmation.
+
+Changes must persist in the database.
+
+---
+
+36. FACULTY DASHBOARD
+
+Display:
+
+- Today’s classes
+- Attendance tasks
+- Pending leave actions where authorized
+- Student doubt questions
+- Assignment status
+- Upcoming appointments
+- Project mentoring tasks
+- Announcements
+- Events
+- Resource bookings
+
+Provide quick actions:
+
+- Mark Attendance
+- Create Assignment
+- Upload Material
+- Answer Doubt
+- View Timetable
+- Create Office Hours
+
+---
+
+37. FACULTY MANAGEMENT
+
+Fields:
+
+Faculty ID
+
+Name
+
+Department
+
+Designation
+
+Email
+
+Phone
+
+Qualification
+
+Experience
+
+Specialization
+
+Joining Date
+
+Operations:
+
+- Add
+- View
+- Search
+- Update
+- Delete
+- Filter
+- Assign Course
+- Assign Class Teacher
+- View Timetable
+
+---
+
+38. CAMPUS COMMAND CENTER
+
+Admin/HOD dashboard should feel like the control centre of Namma Sphere.
+
+Display data-driven analytics such as:
+
+Students
+
+Faculty
+
+Courses
+
+Departments
+
+Rooms/Labs
+
+Today’s classes
+
+Pending resource bookings
+
+Pending leaves
+
+Upcoming exams
+
+Campus events
+
+Open help desk requests
+
+Include JavaFX charts:
+
+Enrollment by department
+
+Attendance overview
+
+Resource usage
+
+Pending request categories
+
+Monthly event activity
+
+All chart values must be calculated from real database data.
+
+---
+
+39. DEPARTMENT MANAGEMENT
+
+Manage:
+
+Department ID
+
+Department Name
+
+HOD
+
+Faculty
+
+Students
+
+Courses
+
+Department detail screen should display related statistics.
+
+---
+
+40. COURSE MANAGEMENT
+
+Fields:
+
+Course Code
+
+Course Name
+
+Credits
+
+Department
+
+Semester
+
+Assigned Faculty
+
+Maximum Capacity
+
+Functions:
+
+- Create
+- View
+- Search
+- Update
+- Delete
+- Assign Faculty
+- Enroll Student
+- Remove Enrollment
+- View Enrolled Students
+
+Do not allow enrollment beyond maximum capacity.
+
+Throw:
+
+CourseCapacityExceededException
+
+when required.
+
+---
+
+41. RESOURCE MANAGEMENT
+
+Manage:
+
+Classrooms
+
+Laboratories
+
+Equipment
+
+Possible additional category:
+
+Seminar Rooms
+
+Each resource should show:
+
+Name
+
+Type
+
+Building
+
+Floor
+
+Capacity
+
+Status
+
+Next booking
+
+Availability
+
+Actions
+
+Use cards for high-level overview and table/de
